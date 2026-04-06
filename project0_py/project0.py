@@ -24,7 +24,7 @@ def f(a, b):
 	'''
 
 	## TODO: Fill your code in here 
-
+	c = a + b
 	##
 
 	return c
@@ -39,15 +39,15 @@ bottom_limit_b = -10
 top_limit_b = 10
 num_steps_b = 100
 
-a_vals = # TODO: use np.linspace() to define range of values
-b_vals = # TODO: use np.linspace() to define range of values
+a_vals = np.linspace(bottom_limit_a, top_limit_a, num_steps_a) # TODO: use np.linspace() to define range of values
+b_vals = np.linspace(bottom_limit_b, top_limit_b, num_steps_b) # TODO: use np.linspace() to define range of values
 
 # Generates a 2D grid of function values
 A, B = np.meshgrid(a_vals, b_vals)
 Z = f(A,B)
 
 # TODO: Replace with the appropriate arguments 
-plt.contour( ,  ,  )  
+plt.contour(A,B,Z)  
 plt.title("Contour Plot of f(a, b)")
 plt.xlabel("a")
 plt.ylabel("b")

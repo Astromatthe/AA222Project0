@@ -1,3 +1,4 @@
 test/
 *.toml
 *.zip
+.conda/
