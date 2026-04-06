@@ -51,6 +51,8 @@ plt.contour(A,B,Z)
 plt.title("Contour Plot of f(a, b)")
 plt.xlabel("a")
 plt.ylabel("b")
+# export as pdf
+plt.savefig("contour_plot.pdf")
 
 # show plot
 plt.show()
